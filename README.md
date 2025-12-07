@@ -256,56 +256,74 @@ GET /api/analytics/budget-status
 
 ## 🗂️ 学习阶段计划
 
-### 阶段 1：MVP（最小可行产品）
+> 📋 详细任务已创建为 [GitHub Issues](https://github.com/xiuxinY/my-finance-tracker/issues)，每个 Issue 包含代码示例和完成标准。
 
-**目标**：跑通核心流程
+### 🟢 阶段 1：MVP（最小可行产品）
 
-- [ ] FastAPI + React + MySQL 基础搭建
-- [ ] 交易记录 CRUD
-- [ ] 分类管理
-- [ ] 月度汇总
-- [ ] ECharts 饼图、折线图
+**目标**：跑通核心流程 | **预计时间**：2-3 周
 
-**学习重点**：
-- FastAPI 异步编程
-- React 19 新特性
-- 前后端联调
+| # | Issue | 状态 |
+|---|-------|------|
+| #1 | [📋 阶段总览](https://github.com/xiuxinY/my-finance-tracker/issues/1) | Epic |
+| #2 | [📁 项目基础结构搭建](https://github.com/xiuxinY/my-finance-tracker/issues/2) | 待开始 |
+| #3 | [🗄️ 数据库设计与建表](https://github.com/xiuxinY/my-finance-tracker/issues/3) | 待开始 |
+| #4 | [⚡ FastAPI CRUD API](https://github.com/xiuxinY/my-finance-tracker/issues/4) | 待开始 |
+| #5 | [⚛️ React 前端基础页面](https://github.com/xiuxinY/my-finance-tracker/issues/5) | 待开始 |
+| #6 | [📊 ECharts 数据可视化](https://github.com/xiuxinY/my-finance-tracker/issues/6) | 待开始 |
 
-### 阶段 2：加入 Django
+**学习重点**：FastAPI 异步编程、React 19 新特性、前后端联调
 
-**目标**：引入管理能力
+### 🔵 阶段 2：Django 集成
 
-- [ ] Django + DRF 集成
-- [ ] Django Admin 后台
-- [ ] 用户认证迁移到 Django
-- [ ] CRUD 统一到 `/api/core`
+**目标**：引入管理能力 | **预计时间**：2-3 周
 
-**学习重点**：
-- Django ORM
-- DRF 序列化器
-- JWT 认证流程
+| # | Issue | 状态 |
+|---|-------|------|
+| #7 | [📋 阶段总览](https://github.com/xiuxinY/my-finance-tracker/issues/7) | Epic |
+| #8 | [🐍 Django 项目初始化](https://github.com/xiuxinY/my-finance-tracker/issues/8) | 待开始 |
+| #9 | [🔌 Django REST Framework API](https://github.com/xiuxinY/my-finance-tracker/issues/9) | 待开始 |
+| #10 | [🔐 JWT 用户认证](https://github.com/xiuxinY/my-finance-tracker/issues/10) | 待开始 |
+| #11 | [🛠️ Django Admin 后台](https://github.com/xiuxinY/my-finance-tracker/issues/11) | 待开始 |
 
-### 阶段 3：系统集成
+**学习重点**：Django ORM、DRF 序列化器、JWT 认证流程
 
-**目标**：工程化
+### 🟣 阶段 3：系统集成
 
-- [ ] Nginx 反向代理
-- [ ] Docker Compose 全栈部署
-- [ ] 日志 & 错误监控
-- [ ] 部署准备
+**目标**：工程化部署 | **预计时间**：1-2 周
 
-**学习重点**：
-- Docker 容器化
-- Nginx 配置
-- 多服务编排
+| # | Issue | 状态 |
+|---|-------|------|
+| #12 | [📋 阶段总览](https://github.com/xiuxinY/my-finance-tracker/issues/12) | Epic |
+| #13 | [🐳 Docker 容器化](https://github.com/xiuxinY/my-finance-tracker/issues/13) | 待开始 |
+| #14 | [🌐 Nginx 反向代理](https://github.com/xiuxinY/my-finance-tracker/issues/14) | 待开始 |
+| #15 | [📦 Docker Compose 全栈部署](https://github.com/xiuxinY/my-finance-tracker/issues/15) | 待开始 |
 
-### 阶段 4：高级功能（可选）
+**学习重点**：Docker 容器化、Nginx 配置、多服务编排
 
-- [ ] 多账户资产管理
-- [ ] 消费预测（简单 ML 模型）
-- [ ] AI 分类推荐
-- [ ] CSV/Excel 账单导入
-- [ ] 移动端适配
+### 🟠 阶段 4：高级功能（可选）
+
+| # | Issue | 说明 |
+|---|-------|------|
+| #16 | [🚀 高级功能](https://github.com/xiuxinY/my-finance-tracker/issues/16) | AI、PWA、数据导入等 |
+
+**可选挑战**：
+- 多账户资产管理
+- 消费预测（简单 ML 模型）
+- AI 分类推荐
+- CSV/Excel 账单导入
+- PWA 移动端适配
+
+### 📈 学习路径图
+
+```
+#2 → #3 → #4 → #5 → #6   （MVP 完成 ✅）
+            ↓
+#8 → #9 → #10 → #11      （Django 集成 ✅）
+            ↓
+#13 → #14 → #15          （部署上线 ✅）
+            ↓
+#16                       （高级功能 🎯）
+```
 
 ---
 
