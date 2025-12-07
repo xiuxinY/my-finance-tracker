@@ -1,10 +1,12 @@
+from typing import Optional
+
 from fastapi import APIRouter
 
 router = APIRouter()
 
 
 @router.get("/category-breakdown")
-async def category_breakdown(month: str | None = None):
+async def category_breakdown(month: Optional[str] = None):
     """获取分类支出占比
 
     Args:
@@ -23,7 +25,7 @@ async def category_breakdown(month: str | None = None):
 
 
 @router.get("/monthly-trend")
-async def monthly_trend(year: int | None = None):
+async def monthly_trend(year: Optional[int] = None):
     """获取月度趋势
 
     Args:
@@ -41,7 +43,7 @@ async def monthly_trend(year: int | None = None):
 
 
 @router.get("/budget-status")
-async def budget_status(month: str | None = None):
+async def budget_status(month: Optional[str] = None):
     """获取预算状态
 
     Args:
